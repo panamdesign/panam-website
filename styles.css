@@ -350,6 +350,10 @@ footer{
         order: 4;
     }
 
+    .ctr2{
+        margin: 150px 10vw 20px 10vw;
+        max-width: 130ch;
+    }
 }
 
 @media (min-width: 1201px){
