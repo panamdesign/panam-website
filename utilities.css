@@ -15,14 +15,6 @@ body{
     font-family: 'Raleway', sans-serif;
 }
 
-.hero-show h1{
-    font-size: 6rem;
-    position: absolute;
-    top: 50%;
-    left: 10vw;
-    width: 80vw;
-    transform: translateY(-60%);
-}
 
 a{
     text-decoration: none;

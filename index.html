@@ -17,8 +17,8 @@
     <main>
         <div class="home-top">
        <!--HEADER DESKTOP-->
-       <div class="method-top">
-        <section id="header-active">
+       <section class="method-top">
+        <div id="header-active">
             <div class="logo"><a href="/index.html"><img src="/images/logo-blk.svg" alt=""></a></div>
             <div class="menu">
                 <ul>
@@ -29,11 +29,12 @@
                 </ul>
                 
             </div>
-        </section>
+        </div>
 
     <!--HEADER MOBILE-->
 
-        <section id="header-inactive">
+        <div id="header-inactive">
+            
             <div class="logo-inactive"><a href="/index.html"><div></div></a>
             </div>
            
@@ -43,9 +44,12 @@
                 </div>
                 <div class="logo-inactive-wrap">
                 
-                        <div></div>
+                        <div class="logo-hide">
+                            <div><img src="/images/logo-yl120.png" alt=""></div>
                 
                 </div>
+                </div>
+         
            
 
             
@@ -62,17 +66,18 @@
                     <li><a href=""><i class="fas fa-envelope"></i></i></a></li>
                 </div>
                 </ul>
+                </div>
                 
-            </div>
-        </section>
-
+        </div>
         
-
         <div class="hero-show">
-            <h1>Your own visual identity <br>
-                for your own business.</h1>
-    </div>
-    </div>
+            <div class="title-home"> <h1>Your own visual identity <br>
+                 for your own business.</h1></div>
+     </div>
+    </section>
+
+    
+
         <section class="intro-text ctr">
             <h2>WHAT WE DO</h2>
             <p>Panam design is a branding agency who specializes in helping companies develop their identity, by focusing on their values, their market and their activity.
@@ -125,12 +130,13 @@ Panam design's mission is to identify the appropriate solution and implement it 
         </p>
 </section>
 
-<div class="title-fleur"></div>
+
+
 
 <section class="title-cta ctr text-upper">
 
    <h4> STARTER OR GROWER </h4>
-
+   <div class="title-fleur"><a href="#"><img src="/images/fleur-yl.png" alt=""></a></div>
    <p> Whether you are new to the game, or you feel ready to scale up your business, 
     we would love to hear about your ideas! 
     
@@ -190,5 +196,7 @@ Panam design's mission is to identify the appropriate solution and implement it 
     
 
     </main>
+    <script src="/script.js"></script>
 </body>
+
 </html>

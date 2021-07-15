@@ -8,28 +8,29 @@
 @media only screen and (max-width: 1070px) {
 
     #header-inactive{
-    position: relative;
-    margin-left: 10vw;
-    margin-right: 10vw;
-    height: 30vh;
-    width: 80vw;
+    position: fixed;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 30px;
+    height: 15vh;
+    width: 100vw;
+    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 200;
 }
 
-
-
 .menu-flower img{
-    height: 80px;
-    width: 60px;
+    height: 40px;
+    width: 40px;
     transition: 0.8s ease;
     z-index: 500;
 }
 
-.logo-inactive img{
-    height: 120px;
+.logo-hide img{
+    height: 80px;
+    
     }
 
 
@@ -37,11 +38,12 @@
    
     position: absolute;
     right: 0;
-    height: 80px;
+    height: 60px;
     width: 60px;
     z-index: 505;
     opacity: 0;
     cursor: pointer;
+    margin-right: 10vw;
 }
 
 .menu-wrap{
@@ -67,7 +69,7 @@
     display: flex;
     flex-direction: column;
     padding-left: 10vw;
-    padding-top: 30vh;
+    padding-top: 25vh;
     z-index: -20;
 }
 
@@ -101,56 +103,71 @@
 
 .logo-inactive,
 .logo-inactive-wrap{
-    left: 0;
+   
     position: absolute;
     cursor: pointer;
-    height: 120px;
-    width: 120px;
+    height: 80px;
+    width: 80px;
 }
 
 
 
-.logo-inactive-wrap::before{
-    content: url(/images/logo-blk120.png);
+/* .logo-hide::before{
+    content: url(/images/logo-yl120.png);
     position: absolute;
-    z-index: -100;
+    z-index: 1000;
+    visibility: hidden;
+} */
+
+.logo-hide{
+    position: absolute;
+    visibility: hidden;
+    transition: 0.1s ease;
     
 }
 
 .logo-inactive-wrap::after{
     
-    content: url(/images/logo-yl120.png);
+    content: '' ;
+    background-image: url(/images/logo-blk80.png) ;
+    transition: all 0.4s ease;
     position: absolute;
-    transition: all 0.8s ease;
-    visibility: hidden;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 80px;
+    z-index: -30;
     
 }
 
 .menu-flower{
     width: 60px;
-    height: 80px;
+    height: 60px;
     right: 0;
     position: absolute;
     cursor: pointer;
+    margin-right: 10vw;
 }
 
 .menu-flower::before{
     content: url(./images/fleur-bl.svg);
-    width: 60px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     position: absolute;
     right: 0;    
     transition: all 0.3s ease;
+    
 }
 
 .menu-flower::after{
     content: url(./images/fleur-yl.svg);
-    width: 60px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     position: absolute;
     right: 0;    
     transition: all 0.3s ease;
     visibility: hidden;
+    
 }
 
 .icons-menu{
@@ -163,15 +180,28 @@
     visibility: visible;
 }
 
-.toggler:checked + .logo-inactive-wrap::after{
+.toggler:checked ~ .logo-inactive-wrap > div{
     visibility: visible;
 }
 
 }
 
+.nav-scrolled{
+    background-color: violet ;
+    width: 100vw;
+    
+}
+
+@media only screen and (min-width: 320px) and (max-width: 530px){
+    .header-inactive{
+        position: relative;
+    }
 
 
 }
+
+
+
 
 
 
