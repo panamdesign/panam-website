@@ -28,23 +28,20 @@
     z-index: 500;
 }
 
-
-
 .logo-inactive img{
     height: 120px;
-    visibility: hidden;
     }
 
 
 .toggler{
-    background: none;
-    outline: none;
+   
     position: absolute;
     right: 0;
     height: 80px;
     width: 60px;
     z-index: 505;
     opacity: 0;
+    cursor: pointer;
 }
 
 .menu-wrap{
@@ -64,27 +61,32 @@
 
 .menu-wrap ul{
     position: fixed;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-color: var(--secondary-color);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 30vh 10vw 0vw 10vw;    
-    align-items: flex-start;
+    padding-left: 10vw;
+    padding-top: 30vh;
     z-index: -20;
 }
 
 .menu-wrap ul li{
     display: flex;
-    justify-content: space-around;
-    font-size: 4rem;
-    padding: 30px 0px;
+    justify-content: flex-start;
+    font-size: 3rem;
+    padding: 20px;
+    left: 0;
     
 }
-.menu-wrap ul li a{
-    text-align: left;
 
+.menu-wrap ul li a{
+    color: white;
+    transition: 0.4s ease; 
+}
+
+.menu-wrap ul li a:hover{
+    color: var(--primary-color);
 }
 
  #header-inactive .toggler:checked ~ .menu-wrap{
@@ -97,11 +99,81 @@
     transform: rotate(360deg);
 }
 
+.logo-inactive{
+    left: 0;
+    position: absolute;
+    cursor: pointer;
+    height: 120px;
+    width: 120px;
+}
 
-/* .toggler:checked + .logo-inactive > img {
+
+
+.logo-inactive-wrap{
+    position: absolute;
+    cursor: pointer;
+    height: 30vh;
+    width: 100vw;
+    margin-left: 12vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo-inactive-wrap::after{
+    
+    content: url(/images/logo-yl120.png);
+    position: absolute;
+    transition: all 0.8s ease;
+}
+
+.logo-inactive::before{
+    content: url(/images/logo-blk120.png);
+    position: absolute;
+    z-index: -10;
+}
+
+.menu-flower{
+    width: 60px;
+    height: 80px;
+    right: 0;
+    position: absolute;
+    cursor: pointer;
+}
+
+.menu-flower::before{
+    content: url(./images/fleur-bl.svg);
+    width: 60px;
+    height: 80px;
+    position: absolute;
+    right: 0;    
+    transition: all 0.4s ease;
+}
+
+.menu-flower::after{
+    content: url(./images/fleur-yl.svg);
+    width: 60px;
+    height: 80px;
+    position: absolute;
+    right: 0;    
+    transition: all 0.4s ease;
+    visibility: hidden;
+}
+
+.toggler:checked + .menu-flower::before,
+.toggler:checked + .menu-flower::after{
+    transform: rotate(360deg);
     visibility: visible;
-} */
+}
+
+
 
 
 }
+
+
+
+
+
 
