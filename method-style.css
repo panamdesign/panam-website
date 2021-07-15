@@ -42,7 +42,7 @@
 
 .card-flip1{
      
-    background-color: var(--light-color);
+    background-color: var(--primary-color);
     width: auto;
     height: 600px;
     text-align: center;
@@ -83,19 +83,30 @@
     transition: 0.4s ease-in-out;
 }
 
-
-.card-title{
+.stylescape-title{
     position: absolute;
     width: max-content;
     top: 0;
-    padding-top: 40px;
+    padding-top: 0px;
+    z-index: 15;
     left: 50%;
     transform: translateX(-50%);
 }
+
+.card-flip1:hover .menu a{
+    color: var(--primary-color);
+    transition: 1s ease;
+}
+
+.card-flip1:hover .menu a::before{
+    transform: translateX(0px) scaleX(1);
+    opacity: 1;
+}
+
 .card-text{
     opacity: 0;
-    position: absolute;
     left: 0;
+    margin-top: 240px;
     padding: 0px 30px;
     transition: 0.4s ease-in-out;
 }
@@ -110,20 +121,18 @@
     height: 50%;
 }
 
-.m-t{
-    margin-top: 50px;
-    
-}
 
 
 
-
-
-
-@media (min-width: 320px) and (max-width: 890px){
+@media (min-width: 320px) and (max-width: 1264px){
 
     .method-intro {
         flex-direction: column;
+    }
+
+    .card-text{
+        
+    margin-top: 170px;
     }
 }
 
@@ -138,32 +147,23 @@
         margin: 150px 10vw 20px 10vw;
         max-width: 130ch;
     }
-
- }
- @media (min-width: 1200px) and (max-width: 1229px){
-
-    .card-flip1 p{
-        font-size: 1.1rem;
-        line-height: 2rem;
     }
 
-   
- }
+ 
 
- @media (min-width: 320px) and (max-width: 1199px){
-
-    .m-t{
-        margin-top: 0px;
-        margin-bottom: 30px;
-    }
- }
-
- @media (min-width: 1230px) and (max-width: 1670px){
+ @media (min-width: 1265px) and (max-width: 1670px){
      .card-flip1 p{
     font-size: 1.1rem;
     line-height: 2rem;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
  }
 
+ @media (min-width: 1671px){
+    .card-flip1 p{
+        font-size: 1.3rem;
+        line-height: 2rem;
+        margin-bottom: 30px;
+ } 
+ } 
  
