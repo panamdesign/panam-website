@@ -4,6 +4,11 @@
     --light-color: #cfc5bb;
     scroll-behavior: smooth;
  }
+
+ .no-pointer a{
+     pointer-events: none;
+     
+ }
  
  .method-top{
      background-image: url(./images/jeff-sheldon-9SyOKYrq-rE-unsplash.jpg);
@@ -27,6 +32,7 @@
     gap: 30px;
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
     width: 80vw;
     height: auto;
 }
@@ -44,28 +50,32 @@
      
     background-color: var(--primary-color);
     width: auto;
-    height: 600px;
+    height: 800px;
     text-align: center;
     display: flex;
     margin-bottom: 30px;
     flex-direction: column;
     gap: 1rem;
     padding: 1rem 2rem;
-    justify-content: center;
     position: relative;
+    transition: 0.4s ease;
+    cursor: pointer;
 }
 
 
 
 .card-photo1,
-.card-photo2{
-    height: 300px;
+.card-photo2,
+.card-photo3{
+    
+    height: inherit;
     width: 100%;
+    
 }
 
 .card-photo1 img{
     
-    height: 70%;
+    height: 65%;
     position: absolute;
     bottom: 0;
     left: 50;
@@ -75,7 +85,17 @@
 
 .card-photo2 img{
     
-    height: 80%;
+    height: 70%;
+    position: absolute;
+    bottom: 0;
+    left: 50;
+    transform: translateX(-50%);
+    transition: 0.4s ease-in-out;
+}
+
+.card-photo3 img{
+    
+    height: 75%;
     position: absolute;
     bottom: 0;
     left: 50;
@@ -91,6 +111,11 @@
     z-index: 15;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.no-mg a{
+    margin-top: 30px;
+    margin-left: 0px;
 }
 
 .card-flip1:hover .menu a{
@@ -117,7 +142,8 @@
 }
 
 .card-flip1:hover .card-photo1 img,
-.card-flip1:hover .card-photo2 img{
+.card-flip1:hover .card-photo2 img,
+.card-flip1:hover .card-photo3 img{
     height: 50%;
 }
 
@@ -131,10 +157,44 @@
     }
 
     .card-text{
-        
-    margin-top: 170px;
+        opacity: 1;
+        margin-top: 150px;
     }
+
+    .card-photo1 img,
+    .card-photo2 img,
+    .card-photo3 img{
+        height: 50%;
+    }
+
+    .active-title h3{
+        padding: 20px;
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+    }
+
+    .card-flip1:hover .menu a::before{
+       opacity: 0;
+    }
+
+    
 }
+
+@media (min-width: 651px) and (max-width: 1250px){
+    
+    .card-flip1 p{
+        font-size: 1.4rem;
+        line-height: 1.9rem;
+        margin-bottom: 20px;
+    }
+
+    .method-text p{
+        font-size: 1.4rem;
+        line-height: 1.9rem;
+    }
+
+}
+
 
  @media (min-width: 320px) and (max-width: 1200px){
 
@@ -153,11 +213,24 @@
 
  @media (min-width: 1265px) and (max-width: 1670px){
      .card-flip1 p{
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     line-height: 2rem;
     margin-bottom: 20px;
 }
+
+    .card-text{
+        margin-top: 300px;
+    }
+
+    .method-text,
+    .method-title{
+        width: 50%;
+        max-width: 100%;
+    }
+
  }
+
+
 
  @media (min-width: 1671px){
     .card-flip1 p{

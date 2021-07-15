@@ -55,7 +55,7 @@
     align-items: flex-start;
     justify-content: center;
     visibility: hidden;
-    transition: all 0.6s ease;
+    transition: all 0.3s ease;
     
 }
 
@@ -99,7 +99,8 @@
     transform: rotate(360deg);
 }
 
-.logo-inactive{
+.logo-inactive,
+.logo-inactive-wrap{
     left: 0;
     position: absolute;
     cursor: pointer;
@@ -109,29 +110,20 @@
 
 
 
-.logo-inactive-wrap{
+.logo-inactive-wrap::before{
+    content: url(/images/logo-blk120.png);
     position: absolute;
-    cursor: pointer;
-    height: 30vh;
-    width: 100vw;
-    margin-left: 12vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    z-index: -100;
+    
 }
-
 
 .logo-inactive-wrap::after{
     
     content: url(/images/logo-yl120.png);
     position: absolute;
     transition: all 0.8s ease;
-}
-
-.logo-inactive::before{
-    content: url(/images/logo-blk120.png);
-    position: absolute;
-    z-index: -10;
+    visibility: hidden;
+    
 }
 
 .menu-flower{
@@ -148,7 +140,7 @@
     height: 80px;
     position: absolute;
     right: 0;    
-    transition: all 0.4s ease;
+    transition: all 0.3s ease;
 }
 
 .menu-flower::after{
@@ -157,8 +149,12 @@
     height: 80px;
     position: absolute;
     right: 0;    
-    transition: all 0.4s ease;
+    transition: all 0.3s ease;
     visibility: hidden;
+}
+
+.icons-menu{
+    display: flex;
 }
 
 .toggler:checked + .menu-flower::before,
@@ -167,6 +163,11 @@
     visibility: visible;
 }
 
+.toggler:checked + .logo-inactive-wrap::after{
+    visibility: visible;
+}
+
+}
 
 
 
