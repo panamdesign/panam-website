@@ -43,7 +43,7 @@
 }
 
 .method-text{
-    max-width: 120ch;
+    max-width: 130ch;
 }
 
 .card-flip1{
@@ -177,6 +177,10 @@
        opacity: 0;
     }
 
+    .card-flip1:hover .card-text{
+        transform: translateY(0%) ;
+        opacity: 1;
+    }
     
 }
 
@@ -222,9 +226,21 @@
         margin-top: 300px;
     }
 
-    .method-text,
+    /* .method-text,
     .method-title{
         width: 50%;
+        max-width: 100%;
+    }
+     */
+    
+    
+    .method-text{
+        width: 40%;
+        max-width: 100%;
+    }
+    
+    .method-title{
+        width: 60%;
         max-width: 100%;
     }
 
