@@ -12,7 +12,6 @@
     position: fixed;
     padding-left: 10vw;
     padding-right: 10vw;
-    padding-top: 20px;
     height: 15vh;
     width: 100vw;
     margin: auto;
@@ -21,6 +20,7 @@
     align-items: center;
     z-index: 200;
 }
+
 
 .menu-flower img{
     height: 40px;
@@ -151,7 +151,6 @@
     width: 50px;
     height: 50px;
     position: absolute;
-    right: 0;    
     transition: all 0.3s ease;
     
 }
@@ -161,7 +160,6 @@
     width: 50px;
     height: 50px;
     position: absolute;
-    right: 0;    
     transition: all 0.3s ease;
     visibility: hidden;
     
@@ -181,26 +179,16 @@
     visibility: visible;
 }
 
-}
+
 
 .nav-scrolled{
     background-color: white ;
     box-shadow: 0px 5px 15px var(--secondary-color);
-    height: 12vh !important;
-    padding-top: 10px !important;
     transition: 0.4s ease;
     
 }
 
-.nav-scrolled .logo-inactive-wrap::after,
-.nav-scrolled .logo-hide,
-.nav-scrolled .menu-flower::after,
-.nav-scrolled .menu-flower::before{
-    transform: scale(0.8);
 }
-
-
-
 
 
 
