@@ -24,8 +24,8 @@
 
 
 .menu-flower img{
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
     transition: 0.8s ease;
     z-index: 500;
 }
@@ -191,8 +191,8 @@
     background-color: white ;
     box-shadow: 0px 5px 15px var(--secondary-color);
     transition: 0.4s ease;
-    height: 17vh !important;
-    padding-top: 15px;
+    height: 15vh !important;
+   
 }
 
 }
