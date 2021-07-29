@@ -3,17 +3,30 @@
     --secondary-color: #282522;
     --light-color: #cfc5bb;
     scroll-behavior: smooth;
+    
  }
 
  .no-pointer a{
      pointer-events: none;
      
  }
+
+ @font-face{
+    font-family: 'Chomsky';
+    src: url(/Chomsky.woff) format('woff');
+ }
+
+ .method-home{
+     font-family: 'Chomsky';
+     text-align: center;
+     font-weight: 400;
+     font-size: 8rem;
+ }
  
  .method-top{
-     background-image: url(./images/jeff-sheldon-9SyOKYrq-rE-unsplash.jpg);
+     /* background-image: url(./images/my-life-through-a-lens-bq31L0jQAjU-unsplash.jpg);
      background-position: center;
-     background-size: cover;
+     background-size: cover; */
      height: 100vh;
      z-index: 5;
  }
@@ -24,11 +37,11 @@
      height: 100vh;
      width: 100%;
      z-index:2;
-     background-color: rgba(255, 188, 26, 0.8);
+     /* background-color: rgba(255, 188, 26, 0.8); */
  }
 
  .method-intro {
-    margin: 160px 10vw;
+    margin: 100px 10vw;
     gap: 30px;
     display: flex;
     justify-content: space-between;
@@ -247,6 +260,17 @@
         max-width: 100%;
     }
 
+ }
+ @media (min-width: 501px) and (max-width: 780px){
+ .method-home{
+     font-size: 6rem;
+ }
+ }
+
+ @media (min-width: 320px) and (max-width: 500px){
+ .method-home{
+     font-size: 4rem;
+ }
  }
 
 
