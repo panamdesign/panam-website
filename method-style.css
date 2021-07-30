@@ -226,8 +226,7 @@
     }
     }
 
- 
-
+   
  @media (min-width: 1265px) and (max-width: 1670px){
      .card-flip1 p{
     font-size: 1.3rem;
@@ -252,17 +251,35 @@
     }
 
  }
+
  @media (min-width: 568px) and (max-width: 780px){
  .method-home{
      font-size: 6rem;
  }
+ .title-home{
+    left: 5vw;
+    right: 5vw;
+}
  }
 
  @media (min-width: 320px) and (max-width: 568px){
  .method-home{
      font-size: 4rem;
  }
+
+ .title-home{
+     left: 5vw;
+     right: 5vw;
  }
+ }
+
+ /* @media (min-width: 320px) and (max-width: 378px){
+    
+    .method-home{
+        font-size: 3rem;
+
+    }
+} */
 
 
 
