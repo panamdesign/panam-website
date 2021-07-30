@@ -54,7 +54,7 @@
 }
 
 .method-text{
-    max-width: 130ch;
+    max-width: 120ch;
 }
 
 .card-flip1{
@@ -239,11 +239,6 @@
         margin-top: 300px;
     }
 
-       
-    .method-text{
-        width: 40%;
-        max-width: 100%;
-    }
     
     .method-title{
         width: 60%;
