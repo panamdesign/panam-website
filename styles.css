@@ -434,6 +434,15 @@ footer{
         
     }
 }
+@media (min-width: 320px) and (max-width: 650px){
+
+    .title-home{
+    position: absolute;
+    top: 60%;
+    transform: translateY(-70%);
+    
+}
+}
 
 @media (min-width: 1070px){
     #header-inactive{

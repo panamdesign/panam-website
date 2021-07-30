@@ -216,7 +216,7 @@
  @media (min-width: 320px) and (max-width: 1200px){
 
     .ctr{
-        margin: 120px 10vw;
+        margin: 100px 10vw;
         max-width: 150ch;
     }
 
@@ -240,14 +240,7 @@
         margin-top: 300px;
     }
 
-    /* .method-text,
-    .method-title{
-        width: 50%;
-        max-width: 100%;
-    }
-     */
-    
-    
+       
     .method-text{
         width: 40%;
         max-width: 100%;
@@ -259,13 +252,13 @@
     }
 
  }
- @media (min-width: 501px) and (max-width: 780px){
+ @media (min-width: 568px) and (max-width: 780px){
  .method-home{
      font-size: 6rem;
  }
  }
 
- @media (min-width: 320px) and (max-width: 500px){
+ @media (min-width: 320px) and (max-width: 568px){
  .method-home{
      font-size: 4rem;
  }
