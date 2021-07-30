@@ -7,6 +7,16 @@
 
 @media only screen and (max-width: 1070px) {
 
+    p{
+        font-size: 1.1rem;
+        line-height: 1.6rem;
+        font-weight: 500;
+    }
+
+    h2 {
+        font-size: 2.4rem;
+    }
+
     #header-inactive{
    
     position: fixed;
