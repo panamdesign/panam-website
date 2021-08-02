@@ -74,13 +74,16 @@
     width: 80vw;
 }
 
-.method-big-title{
-    width: 500px;
+
+.method-big-title img{
+    max-width: 500px;
 }
 
 .method-big-title2 img{
-    width: 300px;
+    max-width: 320px;
 }
+
+
 
 .step img{
     width: 150px;
@@ -88,10 +91,6 @@
     padding: 20px 0px;
 }
 
-
-.method-text{
-        width: 120ch;
-}
 
 .method-text p{
     
@@ -120,7 +119,7 @@
  @media (min-width: 320px) and (max-width: 1200px){
 
     .ctr{
-        margin: 100px 10vw;
+        margin: 80px 10vw;
         max-width: 150ch;
     }
 
