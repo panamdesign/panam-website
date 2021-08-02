@@ -11,6 +11,31 @@
      
  }
 
+ /*ANCHOR OFFSET*/
+
+ #branding::before{
+    display: block; 
+    content: ""; 
+    margin-top: -60px; 
+    height: 20px; 
+    visibility: hidden; 
+    pointer-events: none;
+}
+
+#time-machine::before{
+    display: block; 
+    content: ""; 
+    margin-top: -40px; 
+    height: 10px; 
+    visibility: hidden; 
+    pointer-events: none;
+}
+
+#time-machine{
+    padding-top: 10px;
+}
+
+
  @font-face{
     font-family: 'Chomsky';
     src: url(/Chomsky.woff) format('woff');
@@ -41,18 +66,17 @@
 #products{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* display: flex;
-    flex-wrap: wrap;
-    flex-basis: 100%; */
     gap: 30px;
     margin: 50px auto 100px auto;
     width: 80vw;
     color: var(--secondary-color);
 }
 
+
+
 .product-text h4{
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .product-text{
@@ -83,14 +107,11 @@
     max-width: 320px;
 }
 
-
-
 .step img{
     width: 150px;
     height: 150px;
     padding: 20px 0px;
 }
-
 
 .method-text p{
     
@@ -103,6 +124,10 @@
     font-size: 1.4rem;
     line-height: 2rem;
     font-weight: 500;
+}
+
+.method-text h3{
+    font-size: 1.6rem;
 }
 
 
@@ -120,11 +145,16 @@
 
     .ctr{
         margin: 80px 10vw;
-        max-width: 150ch;
+        max-width: 130ch;
     }
 
     .ctr2{
         margin: 150px 10vw 20px 10vw;
+        max-width: 130ch;
+    }
+
+    .ctr3{
+        margin: 50px 10vw;
         max-width: 130ch;
     }
     }

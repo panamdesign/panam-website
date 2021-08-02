@@ -12,7 +12,7 @@
 
 body{
     font-size: 62.5%;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Georama', sans-serif;
 }
 
 
@@ -38,8 +38,13 @@ a{
 .ctr{
    width: 80vw;
    height: auto;
-   margin: 80px auto;
+   margin: 80px 10vw;
    max-width: 120ch;
+}
+
+.ctr4{
+    margin: 40px 10vw;
+    max-width: 130ch;
 }
 
 h2 {
@@ -48,7 +53,7 @@ h2 {
 
 h3{
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 2.5rem;
 }
 
@@ -71,7 +76,7 @@ p{
 button{
     border: none;
     background: none;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Georama', sans-serif;
 }
 
 .btn-light{
@@ -140,27 +145,3 @@ button{
     justify-content: center;
 }
 
-.title-fleur,
-.title-fleur-blk{
-
-    display: flex;
-    align-content: center;
-    justify-content: flex-start;
-    margin-left: 10vw;
-    height: 150px;
-}
-
-.title-fleur img,
-.title-fleur-blk img{
-    height: 100%;
-    cursor: pointer;
-    transition: 0.4s ease;
-}
-
-
-.title-fleur img:hover,
-.title-fleur-blk img:hover{
-
-    transform: rotate(180deg);
-
-}

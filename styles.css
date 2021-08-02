@@ -240,7 +240,7 @@
     background-position: center;
     width: 100%;
     padding: 0px 30px;
-    height: 650px;
+    height: 690px;
 }
 
 
@@ -259,6 +259,10 @@ footer{
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 1.5rem;
     padding: 50px 0px;
+}
+
+.footer-contact p{
+    font-weight: 300;
 }
 
 .footer-contact,
@@ -369,7 +373,6 @@ footer{
         font-size: 3.4rem;
     }
 
-    .ctr,
     .title-cards{
         margin: 120px auto;
     }
@@ -470,11 +473,6 @@ footer{
         order: 4;
     }
 
-    .ctr2{
-        margin: 150px 10vw 20px 10vw;
-        max-width: 130ch;
-    }
-
     .card-parent{
         flex-direction: column;
     }
@@ -498,18 +496,17 @@ footer{
 }
 
 @media (min-width: 1201px){
-    .ctr{
-        margin: 40px 10vw 70px 10vw;
-    }
+    
 
     .ctr2{
         margin: 80px 10vw;
         max-width: 130ch;
     }
 
+    /* .ctr, */
     .ctr3{
-        max-width: 150ch;
-        margin: 150px 10vw;
+        margin: 40px 10vw 100px 10vw;
+        max-width: 130ch;
     }
 
 }
