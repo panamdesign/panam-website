@@ -6,7 +6,8 @@
 }
 
 .home-top{
-    background-image: url(./images/paris1920.jpg);
+    background-image: url(./images/parisb-w.jpg);
+    /* background-image: url(https://source.unsplash.com/collections/HIQ1kLIKiCc/1600x900); */
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -24,6 +25,7 @@
     width: 100%;
     z-index:2;
     background-color: rgba(255, 188, 26, 0.6);
+    
 }
 
 #header-active{
@@ -40,14 +42,14 @@
 
 
 .logo{
-    height: 80px;
+    height: 100px;
     width: auto;
     display: grid;
     place-items: center;
 }
 
 .logo img{
-    height: 120px;
+    height: 100px;
 }
 
 .menu ul{
@@ -151,7 +153,8 @@
 }
 
 .title-home h2{
-    font-weight: 300;
+    font-weight: 400;
+    font-size: 2.6rem;
 }
 
 .intro-text,
@@ -179,7 +182,7 @@
 .card-parent{
     display: flex;
     height: auto;
-    background-color: var(--light-color);
+    background-color: var(--primary-color);
     align-items: center;
 }
 
@@ -376,10 +379,6 @@ footer{
         line-height: 1.6rem;
     }
 
-    h2{
-        font-size: 2.4rem;
-    }
-
      
     .footer-contact{
         grid-gap: 0.4rem;
@@ -438,7 +437,7 @@ footer{
 
     .title-home{
     position: absolute;
-    top: 50%;
+    top: 55%;
     transform: translateY(-60%);
     
 }
@@ -500,11 +499,11 @@ footer{
 
 @media (min-width: 1201px){
     .ctr{
-        margin: 100px 10vw;
+        margin: 40px 10vw 70px 10vw;
     }
 
     .ctr2{
-        margin: 150px 10vw 20px 10vw;
+        margin: 80px 10vw;
         max-width: 130ch;
     }
 

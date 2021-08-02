@@ -5,7 +5,7 @@ const sectionOne = document.querySelector(".method-top")
 
 
 const sectionOneOptions = {
-    rootMargin: "-100px 0px 0px 0px"
+    rootMargin: "-500px 0px 0px 0px"
 };
 
 const sectionOneObserver = new IntersectionObserver(function (
