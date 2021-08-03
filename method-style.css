@@ -11,6 +11,24 @@
      
  }
 
+ .method-top{
+    background-image: url(./images/JPEG/arc-triomphe.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    z-index: 5;
+}
+
+.method-top::before{
+    content: '';
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    z-index:2;
+    background-color: rgba(24, 22, 21, 0.6);
+    
+}
+
  /* BLACK BLOCK ON HOVER NAV*/
 
  .menu ul a::before{
@@ -93,7 +111,7 @@
      text-align: center;
      font-weight: 400;
      font-size: 8rem;
-     color:var(--secondary-color);
+     color:var(--primary-color);
  }
  
  .method-top{
