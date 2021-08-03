@@ -16,8 +16,8 @@
  #branding::before{
     display: block; 
     content: ""; 
-    margin-top: -60px; 
-    height: 20px; 
+    margin-top: 20px; 
+    height: 10px; 
     visibility: hidden; 
     pointer-events: none;
 }
@@ -25,14 +25,15 @@
 #time-machine::before{
     display: block; 
     content: ""; 
-    margin-top: -40px; 
+    margin-top: 20px; 
     height: 10px; 
     visibility: hidden; 
     pointer-events: none;
 }
 
-#time-machine{
-    padding-top: 10px;
+#time-machine,
+#branding{
+    padding-top: 50px;
 }
 
 
@@ -107,10 +108,16 @@
     max-width: 320px;
 }
 
-.step img{
+/* .step img{
     width: 150px;
     height: 150px;
     padding: 20px 0px;
+} */
+
+.step h1{
+    font-size: 5rem;
+    font-weight: 200;
+    font-stretch: condensed;
 }
 
 .method-text p{
@@ -128,6 +135,8 @@
 
 .method-text h3{
     font-size: 1.6rem;
+    line-height: 2.125rem;
+    font-weight: 600;
 }
 
 

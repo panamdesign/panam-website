@@ -5,6 +5,21 @@
     scroll-behavior: smooth;
  }
 
+ @media (orientation: landscape) and (min-width: 350px){
+    .nav-scrolled{
+        min-height: 30vh !important;
+       
+    }
+
+    /* .hero-show h1{
+        font-size: 2.6rem !important;
+    }
+
+    .title-home h2{
+        font-size: 1.8rem;
+    } */
+}
+
 @media only screen and (max-width: 1070px) {
 
     p{
@@ -216,6 +231,10 @@
 }
 
 }
+
+
+
+
 
 
 
