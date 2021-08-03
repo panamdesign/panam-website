@@ -1,18 +1,16 @@
-
-
 const header = document.querySelector("#header-inactive")
-const sectionOne = document.querySelector(".method-top")
+const sectionTwo = document.querySelector(".form-top")
 
 
-const sectionOneOptions = {
+const sectionTwoOptions = {
     rootMargin: "-500px 0px 0px 0px"
     
 };
 
 
-const sectionOneObserver = new IntersectionObserver(function (
+const sectionTwoObserver = new IntersectionObserver(function (
 entries,
-sectionOneObserver
+sectionTwoObserver
 
 ) {
     entries.forEach(entry => {
@@ -21,12 +19,6 @@ sectionOneObserver
       } else (header.classList.remove('nav-scrolled'));
     });
 },
-sectionOneOptions);
+sectionTwoOptions);
 
-sectionOneObserver.observe (sectionOne);
-
-
-
-
-
-
+sectionTwoObserver.observe (sectionTwo);

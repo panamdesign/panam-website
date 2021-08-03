@@ -1,0 +1,242 @@
+:root{
+    --primary-color: rgb(255, 188, 26);
+    --secondary-color: #181615;
+    --light-color: rgb(207, 197, 187);
+    scroll-behavior: smooth;
+ }
+
+
+.form-top{
+    background-color: var(--secondary-color);
+    height: 100vh;
+}
+
+#the-form{
+    background-color: var(--secondary-color);
+}
+
+
+/*YELLOW BLOCK ON HOVER NAV*/
+
+.menu ul a::before{
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    z-index: -5;
+    background: var(--primary-color);
+    display: block;
+    transform: translateX(-150px) scaleX(0);
+    transition: transform 0.4s ease;
+    opacity: 0;
+}
+
+.menu ul a:hover::before{
+    transform: translateX(0px) scaleX(1);
+    opacity: 1;
+}
+
+
+.menu a{
+    position: relative;
+    text-decoration: none;
+    display: flex;
+    color: var(--primary-color);
+    align-items: center;
+    height: 50px;
+    justify-content: space-around;
+    font-size: 1.2rem;
+    margin-left: 30px;
+    padding: 20px;
+    font-weight: 500;
+}
+
+.menu a:hover{
+    color: var(--secondary-color);
+    transition: 1s ease;
+}
+
+/*--------*/
+
+.wrapper{
+    height: 100%;
+    padding: 50px 0px;
+    display: flex;
+    overflow: hidden;
+}
+
+.form-title{
+    background-color: var(--primary-color);
+    height: auto;
+    text-align: center;
+    margin-top: 30px;
+    padding: 15px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+}
+
+/*FORM ASSETS*/
+
+label{
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+input{
+    width: 100%;
+    height: 40px;
+    padding: 0.5rem;
+    font-family: 'Georama';
+    font-size: 1.1rem;
+    margin: 15px 0px 25px 0px;
+}
+
+input[type="text"]:focus {
+    outline: 4px solid var(--primary-color);
+    border: none;
+  }
+
+input[type="email"]:focus {
+    outline: 4px solid var(--primary-color);
+    border: none;
+  }
+
+option{
+    height: auto;
+    padding: 0.5rem;
+    font-family: 'Georama';
+    font-size: 1.1rem;
+    display: inline-block;
+    width: 100%;
+   
+}
+
+select{
+    height: 50px;
+    width: 100%;
+    padding: 0.5rem;
+    font-family: 'Georama';
+    font-size: 1.1rem;
+    margin: 15px 0px 25px 0px;
+}
+
+textarea{
+    width: 100%;
+    height: 400px;
+    resize: none;
+    padding: 0.5rem;
+    font-family: 'Georama';
+    font-size: 1.1rem;
+    margin: 15px 0px 25px 0px;
+}
+
+textarea[type=text]:focus{
+    outline: 4px solid var(--primary-color);
+    border: none;
+}
+
+select:focus{
+    outline: 4px solid var(--primary-color);
+    border: none;
+}
+
+.btn-form{
+    width: 100%;
+    transition: 0.4s ease;
+}
+
+.btn-form:hover{
+    box-shadow: -2px 2px 30px 5px var(--primary-color);
+}
+
+
+
+
+/*----------*/
+
+
+
+.form-children{
+    display: flex;
+    margin: 0px 10vw;
+    width: 80vw;
+    gap: 5rem;
+    /* background-color: rgb(88, 58, 2); */
+    height: 100%;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.formchild1{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.formchild2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+    /* justify-content: space-evenly; */
+}
+
+.separator{
+    width: 100%;
+    height: 10px;
+    background-color: var(--primary-color);
+}
+
+@media only screen and (max-width: 1070px){
+
+.menu-flower::before {
+    content: url(./images/fleur-yl.svg);
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    transition: all 0.3s ease;
+}
+
+.logo-inactive-wrap::after {
+    content: '';
+    background-image: url(/images/logo-yl70.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.4s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 80px;
+    z-index: -30;
+}
+
+.logo-inactive, 
+.logo-inactive-wrap {
+    position: absolute;
+    cursor: pointer;
+    height: 70px;
+    width: 70px;
+}
+
+.form-children{
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.formchild1{
+    width: 100%;
+}
+
+.nav-scrolled{
+    background-color: var(--secondary-color) ;
+    box-shadow: 0px 5px 15px var(--primary-color);
+    height: 15vh !important;
+}
+}

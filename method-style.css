@@ -11,6 +11,52 @@
      
  }
 
+ /* BLACK BLOCK ON HOVER NAV*/
+
+ .menu ul a::before{
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    z-index: -5;
+    background: var(--secondary-color);
+    display: block;
+    transform: translateX(-150px) scaleX(0);
+    transition: transform 0.4s ease;
+    opacity: 0;
+}
+
+.menu ul a:hover::before{
+    transform: translateX(0px) scaleX(1);
+    opacity: 1;
+}
+
+
+.menu a{
+    position: relative;
+    text-decoration: none;
+    display: flex;
+    color: var(--secondary-color);
+    align-items: center;
+    height: 50px;
+    justify-content: space-around;
+    font-size: 1.2rem;
+    margin-left: 30px;
+    padding: 20px;
+    font-weight: 500;
+}
+
+.menu a:hover{
+    color: var(--primary-color);
+    transition: 1s ease;
+}
+
+
+.active a{
+    color: var(--primary-color);
+}
+
+
  /*ANCHOR OFFSET*/
 
  #branding::before{
@@ -47,6 +93,7 @@
      text-align: center;
      font-weight: 400;
      font-size: 8rem;
+     color:var(--secondary-color);
  }
  
  .method-top{
@@ -147,6 +194,7 @@
         display: flex;
         flex-direction: column;
     }
+
 }
 
 
