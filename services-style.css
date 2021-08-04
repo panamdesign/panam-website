@@ -15,6 +15,11 @@ body{
     font-family: 'Georama', sans-serif;
 }
 
+@font-face{
+    font-family: 'Chomsky';
+    src: url(/Chomsky.woff) format('woff');
+ }
+
 .hero-service{
     background-image: url(/images/JPEG/adam.jpg);
     background-position: center;
@@ -146,18 +151,31 @@ body{
         max-width: none;
     }
 
-    .service-big-title img{
-        display: block;
-        min-width: 400px;
-        height: 200px;
-}
-
-    .service-title-text{
+   .service-title-text{
     
         background-color: var(--primary-color);
         max-width: none;
         flex-basis: 50%;
 }
+
+.service-home h1{
+    font-family: 'Chomsky';
+    text-align: center;
+    font-size: 5rem;
+    position: absolute;
+    left: 5vw;
+    right: 5vw;
+    font-weight: 400;
+    color:var(--primary-color);
+}
+
+.service-home{
+    top: 30%;
+}
+
+
+
+
 }
 
 
