@@ -547,7 +547,7 @@ footer{
 
 }
 
-@media (min-width: 1201px){
+@media (min-width: 1070px){
     
 
     .ctr2{
@@ -555,7 +555,7 @@ footer{
         max-width: 130ch;
     }
 
-    /* .ctr, */
+
     .ctr3{
         margin: 40px 10vw 100px 10vw;
         max-width: 130ch;

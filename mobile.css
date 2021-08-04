@@ -13,6 +13,20 @@
 
 }
 
+@media only screen and (max-width: 780px){
+    .product-text{
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
+    
+    .step,
+    .product-script {
+        max-width: 100% !important;
+    }
+
+}
+
+
 @media only screen and (max-width: 1070px) {
 
     p{
@@ -237,9 +251,15 @@
     display: flex;
 }
 
-.fa-behance,
-.fa-envelope{
+.menu-wrap .fa-behance,
+.menu-wrap .fa-envelope{
     padding-left: 20px;
+    
+}
+
+.menu-wrap .fa-behance,
+.menu-wrap .fa-instagram{
+padding-right: 20px;
 }
 
 .toggler:checked + .menu-flower::before,

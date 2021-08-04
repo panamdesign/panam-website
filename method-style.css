@@ -130,27 +130,34 @@
  }
 
 #products{
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    margin: 50px auto 100px auto;
+    gap: 30px; */
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto 0px auto;
     width: 80vw;
     color: var(--secondary-color);
 }
 
-
-
 .product-text h4{
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .product-text{
-    background-color: var(--primary-color);
-    padding: 2rem;
-    max-height: 100%;
-    width: 100%;
-        
+    /* background-color: var(--primary-color); */
+    padding: 2rem 0;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+
+.product-script{
+    flex-basis:50%;
+    max-width: 50%;
 }
 
 .wrapper{
@@ -173,16 +180,20 @@
     max-width: 320px;
 }
 
-/* .step img{
-    width: 150px;
-    height: 150px;
-    padding: 20px 0px;
-} */
+.step{
+    max-width: 50%;
+    flex-basis:50%;
+}
 
 .step h1{
     font-size: 5rem;
     font-weight: 200;
     font-stretch: condensed;
+    padding-bottom: 15px;
+}
+
+.method-text{
+    max-width: 80vw;
 }
 
 .method-text p{
@@ -204,6 +215,39 @@
     font-weight: 600;
 }
 
+.vignettes{
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+    justify-content: space-between;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.vignette-1,
+.vignette-2,
+.vignette-3{
+    background-color: var(--primary-color);
+    padding: 2rem;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.icon-3{
+    background-image: url(/images/JPEG/icon3-tm.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+}
+
+
+.vignettes h3{
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    font-weight: 700;
+}
 
 
 @media (max-width: 1070px){
@@ -213,10 +257,27 @@
         flex-direction: column;
     }
 
+    .vignettes{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .vignette-1,
+    .vignette-2,
+    .vignette-3{
+       
+        padding: 2rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+}
+
 }
 
 
- @media (min-width: 320px) and (max-width: 1200px){
+ @media (min-width: 320px) and (max-width: 1070px){
 
     .ctr{
         margin: 80px 10vw;
