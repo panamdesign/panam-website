@@ -152,12 +152,7 @@ select:focus{
     box-shadow: -2px 2px 30px 5px var(--primary-color);
 }
 
-
-
-
 /*----------*/
-
-
 
 .form-children{
     display: flex;

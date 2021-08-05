@@ -83,7 +83,7 @@ body{
 }
 
 
-.service-home h1{
+.service-home{
     font-family: 'Chomsky';
     text-align: center;
     font-weight: 400;
@@ -91,16 +91,22 @@ body{
     color:var(--primary-color);
 }
 
-.service-text{
-    text-align: center;
+/* .service-text{
+    text-align: left;
     width: 80vw;
     margin: 40px auto;
-}
+} */
 
 .container{
     margin: 40px 10vw;
     width: 80vw;
 }
+
+.branding-workshop{
+    display: flex;
+    align-items: flex-start;
+}
+
 
 .service-big-title{
     display: block;
@@ -118,10 +124,6 @@ body{
     
 }
 
-.branding-workshop{
-    display: flex;
-    align-items: flex-start;
-}
 
 .service-title-text{
     
@@ -132,11 +134,9 @@ body{
     padding: 2rem;
 }
 
-.service-title-text ul li{
+.service-title-text ul{
     list-style: none;
-    font-size: 1.4rem;
-    line-height: 2rem;
-    font-weight: 500;
+    padding-top: 10px;
 }
 
 @media (min-width: 320px) and (max-width: 1070px){
@@ -169,13 +169,20 @@ body{
     color:var(--primary-color);
 }
 
-.service-home{
-    top: 30%;
 }
 
 
-
-
+@media (min-width: 320px) and (max-width: 650px){
+.title-home {
+    position: absolute;
+    top: 55%;
+    transform: translateY(-60%);
+    left: 5vw;
+    right: 5vw;
+    font-size: 4rem;
 }
+}
+
+
 
 

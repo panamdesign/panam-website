@@ -140,11 +140,6 @@
     color: var(--secondary-color);
 }
 
-.product-text h4{
-    display: block;
-    margin-bottom: 5px;
-}
-
 .product-text{
     /* background-color: var(--primary-color); */
     padding: 2rem 0;
@@ -194,6 +189,7 @@
 
 .method-text{
     max-width: 80vw;
+    margin: 40px 10vw 100px 10vw;
 }
 
 .method-text p{
@@ -209,12 +205,6 @@
     font-weight: 500;
 }
 
-.method-text h3{
-    font-size: 1.6rem;
-    line-height: 2.125rem;
-    font-weight: 600;
-}
-
 .vignettes{
     display: flex;
     width: 100%;
@@ -222,17 +212,23 @@
     justify-content: space-between;
     text-align: center;
     margin: 50px 0;
+    height: auto;
+}
+
+.vignette-wrap{
+    height: 100%;
+    width: 100%;
 }
 
 .vignette-1,
 .vignette-2,
 .vignette-3{
     background-color: var(--primary-color);
-    /* padding: 2rem; */
+    padding: 3rem;
     width: 350px;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .vignette-title{
@@ -259,15 +255,10 @@
     background-image: url(/images/JPEG/icon3-tm.svg);
     background-repeat: no-repeat;
     background-position: center;
+    margin-bottom: 20px;
     height: 300px;
 }
 
-
-.vignettes h3{
-    font-size: 1.8rem;
-    line-height: 2.3rem;
-    font-weight: 700;
-}
 
 
 @media (max-width: 1070px){
@@ -314,6 +305,8 @@
         max-width: 130ch;
     }
     }
+
+ 
 
  @media (min-width: 568px) and (max-width: 780px){
  .method-home{

@@ -20,6 +20,8 @@ a{
     text-decoration: none;
 }
 
+
+
 .current{
     
     color: var(--primary-color);
@@ -47,20 +49,27 @@ a{
     max-width: 130ch;
 }
 
+
 h2 {
     font-size: 2.2rem;
 }
 
 h3{
-    font-size: 2rem;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
     font-weight: 700;
-    line-height: 2.5rem;
 }
 
 h4{
     font-size: 1.6rem;
     font-weight: 600;
-    line-height: 2.3rem;
+    line-height: 2rem;
+}
+
+h5{
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.8rem;
 }
 
 p{
@@ -137,22 +146,7 @@ button{
 }
 
 
-.title-anim-flower{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    margin: 20px 0px 10px 0px;
-}
 
-
-.title-anim{
-    width: 100%;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-}
 
 
 
