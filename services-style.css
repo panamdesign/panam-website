@@ -104,18 +104,20 @@ body{
 
 .branding-workshop{
     display: flex;
+    flex-direction: column;
     align-items: flex-start;
 }
 
 
 .service-big-title{
     display: block;
-    max-width: 50%;
+    width: 100%;
     flex-basis: 50%;
     height: auto;
     padding: 2rem;
     background-color: var(--secondary-color);
     color: var(--primary-color);
+    margin-bottom: 30px;
 }
 
 .service-big-title img{
@@ -124,22 +126,12 @@ body{
     
 }
 
-
-.service-title-text{
-    
-    background-color: var(--primary-color);
-    max-width: 50%;
-    flex-basis: 50%;
-    text-align: left;
-    padding: 2rem;
-}
-
 .service-title-text ul{
     list-style: none;
     padding-top: 10px;
 }
 
-@media (min-width: 320px) and (max-width: 1070px){
+@media (min-width: 320px) and (max-width: 920px){
     .branding-workshop{
         display: flex;
         flex-direction: column;
@@ -151,12 +143,18 @@ body{
         max-width: none;
     }
 
-   .service-title-text{
-    
-        background-color: var(--primary-color);
-        max-width: none;
-        flex-basis: 50%;
+   .service-title-text,
+   .product-text-baseline{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        min-width: none;
+        text-align: left;
 }
+
+    .product-script{
+        max-width: none;
+    }
 
 .service-home h1{
     font-family: 'Chomsky';
@@ -171,7 +169,6 @@ body{
 
 }
 
-
 @media (min-width: 320px) and (max-width: 650px){
 .title-home {
     position: absolute;
@@ -182,6 +179,12 @@ body{
     font-size: 4rem;
 }
 }
+
+@media (min-width: 320px) and (max-width: 920px){
+
+
+}
+
 
 
 

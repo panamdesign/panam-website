@@ -230,6 +230,7 @@
 .container{
     margin: 40px 10vw;
     width: 80vw;
+    
 }
 
 .branding-card{
@@ -260,6 +261,9 @@
     color: var(--primary-color);
 }
 
+.home-card-title img{
+    max-width: 500px;
+}
 .home-card-title-tm img{
     max-width: 400px;
     
@@ -279,20 +283,36 @@
     transform: rotate(15deg);
     transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
     animation: tilting 1.8s infinite ;
+        
 }
 
 .image-t-m img{
     
     flex-basis: 50%;
-    width: 100%;
+    width: 80%;
+    display: block;
+    margin: auto;
     padding: 0px 10px 0px 30px;
     transform: scale(1);
-    transition: 1.5s ease;
+    transition: 1.3s ease;
+  
 }
 
-.home-card-frame-tm:hover .image-t-m img {
-transform: scale(0) rotate(-50deg);
+/*DeLorean gone*/
 
+.gobackmarty{
+    position: absolute;
+    height: 60%;
+    width: 40%;
+    z-index: 105;
+    opacity: 0;
+    cursor: pointer;
+    animation: tilting 1.8s infinite;
+    
+}
+
+.gobackmarty:checked ~ .image-t-m img {
+transform: scale(0) rotate(-50deg);
 
 }
 
@@ -318,56 +338,7 @@ transform: scale(0) rotate(-50deg);
     }
 }
 
-
-
-
-
 /*----------------*/
-
-
-
-.title-cards{
-    margin: 50px auto 0px auto;
-    display: flex;
-    flex-direction: column;
-    width: 80vw;
-    height: auto;
-    grid-gap: 5rem;
-}
-
-.card-parent{
-    display: flex;
-    height: auto;
-    background-color: var(--primary-color);
-    align-items: center;
-}
-
-.card{
-    width: auto;
-    height: auto;
-    text-align: left;
-    display: flex;
-    margin: 30px 0px;
-    flex-direction: column;
-    gap: 2rem;
-    padding: 1rem 1.5rem;
-    justify-content: space-evenly;
-    
-}
-
-.card p{
-    width: 30vw;
-}
-
-.title-head-card{
-    display: inline-block;
-    padding-bottom: 25px;
-}
-
-.title-head-card img{
-    height: 150px;
-    width: 100%;
-}
 
 .image-b-w{
     
@@ -603,6 +574,36 @@ footer{
 }
 }
 
+@media (min-width: 320px) and (max-width: 920px){
+    
+.container,
+.branding-card,
+.branding-card-lg{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    align-items: initial;
+   
+}
+
+.home-card-title,
+.home-card-title-tm{
+    max-width: none;
+}
+
+.image-t-m{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.gobackmarty{
+    position: absolute;
+    height: 80%;
+    width: 80%;
+
+}
+}
 
 @media (min-width: 1070px){
     #header-inactive{
@@ -643,13 +644,7 @@ footer{
         height: 400px;
     }
 
-    .image-t-m{
-        height: 350px;
-        width: 100%;
-        background-size: cover;
-        
-    }
-
+  
 }
 
 @media (min-width: 1070px){
