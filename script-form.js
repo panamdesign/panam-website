@@ -15,8 +15,8 @@ sectionTwoObserver
 ) {
     entries.forEach(entry => {
       if (!entry.isIntersecting) {
-          header.classList.add('nav-scrolled')
-      } else (header.classList.remove('nav-scrolled'));
+          header.classList.add('nav-scrolled-form')
+      } else (header.classList.remove('nav-scrolled-form'));
     });
 },
 sectionTwoOptions);
