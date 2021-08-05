@@ -154,7 +154,6 @@
     display: block;
     margin: 40px 10vw 20px 10vw;
     width: 80vw;
-    padding: 2rem;
 }
 
 
@@ -163,7 +162,7 @@
 }
 
 .method-big-title2 img{
-    max-width: 320px;
+    max-width: 370px;
 }
 
 .step{
@@ -258,6 +257,7 @@
     #products{
         display: flex;
         flex-direction: column;
+        margin: 0px auto;
     }
 
     .vignettes{
@@ -330,6 +330,13 @@
      left: 5vw;
      right: 5vw;
  }
+
+ .step h1{
+    font-size: 5vw;
+    font-weight: 200;
+    font-stretch: condensed;
+    padding-bottom: 15px;
+}
  }
 
 

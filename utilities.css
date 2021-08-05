@@ -147,7 +147,7 @@ button{
 
 .product-text{
     /* background-color: var(--primary-color); */
-    padding: 2rem;
+    padding: 2rem 0rem;
     display: flex;
     align-items: center;
     border-bottom: 2px solid var(--primary-color);

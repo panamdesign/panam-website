@@ -17,6 +17,12 @@
     .product-text{
         flex-direction: column;
         align-items: flex-start !important;
+        padding: 2rem 0rem ;
+    }
+
+    .method-big-title,
+    .method-big-title2{
+        padding: 0rem !important;
     }
     
     .step,
