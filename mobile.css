@@ -166,6 +166,7 @@
 .menu-wrap ul li a{
     color: white;
     transition: 0.4s ease; 
+    
 }
 
 .menu-wrap ul li a:hover{
@@ -272,18 +273,20 @@
 
 .icons-menu{
     display: flex;
+    justify-content: space-between;
+    width: 230px;
 }
 
-.menu-wrap .fa-behance,
-.menu-wrap .fa-envelope{
-    padding-left: 20px;
-    
+.icons-menu a{
+    padding: 0.5rem;
+
 }
 
-.menu-wrap .fa-behance,
-.menu-wrap .fa-instagram{
-padding-right: 20px;
+.icons-menu ul li{
+    padding: 0.5rem;
 }
+
+
 
 .toggler:checked + .menu-flower::before,
 .toggler:checked + .menu-flower::after{
@@ -298,14 +301,11 @@ padding-right: 20px;
 
 
 .nav-scrolled{
-    /* background-color: var(--primary-color) ;
-    box-shadow: 0px 5px 15px var(--secondary-color); */
-
-     background-color: var(--secondary-color) ;
-    box-shadow: 0px 5px 15px var(--primary-color);
     
+    background-color: var(--secondary-color) ;
+    box-shadow: 0px 5px 15px var(--primary-color);
     transition: 0.2s ease;
-    height: 15vh !important;
+    min-height: 92px !important;
    
 }
 

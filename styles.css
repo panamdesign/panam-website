@@ -7,7 +7,6 @@
 
 .home-top{
     background-image: url(./images/JPEG/parisb-w.jpg);
-    /* background-image: url(https://source.unsplash.com/collection/x-IhlPj4jiY/1600x900); */
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -279,6 +278,13 @@
     align-items: center;
 }
 
+.home-card-frame-tm{
+    background-image: url(/images/JPEG/gone-back.png);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+}
+
 .image-t-m {
     transform: rotate(15deg);
     transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
@@ -412,13 +418,13 @@ footer{
 
 .footer-contact .fab,
 .footer-contact .fas{
-    font-size: 35px;
+    font-size: 40px;
+    text-align: center;
 }
 
 .footer-contact a{
-    width: 40px;
-    height: 40px;
-    color: white;
+    padding: 0.5rem;
+    
   
 }
 

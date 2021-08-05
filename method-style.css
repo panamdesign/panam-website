@@ -179,7 +179,7 @@
 
 .method-text{
     max-width: 80vw;
-    margin: 40px 10vw 100px 10vw;
+    margin: 40px 10vw 60px 10vw;
 }
 
 .method-text p{
@@ -201,7 +201,7 @@
     gap: 2rem;
     justify-content: space-between;
     text-align: center;
-    margin: 50px 0;
+    margin: 30px 0;
     height: auto;
 }
 
@@ -332,7 +332,7 @@
  }
 
  .step h1{
-    font-size: 5vw;
+    font-size: 3.5rem;
     font-weight: 200;
     font-stretch: condensed;
     padding-bottom: 15px;

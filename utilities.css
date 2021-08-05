@@ -78,8 +78,16 @@ p{
     font-weight: 500;
 }
 
-.xtra-mb{
+.xtra-mb-l{
     margin-bottom: 30px;
+}
+
+.xtra-mb-m{
+    margin-bottom: 20px;
+}
+
+.xtra-mb-s{
+margin-bottom: 10px;
 }
 
 .xtra-mt{
