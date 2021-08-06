@@ -94,6 +94,10 @@ margin-bottom: 10px;
     margin-top: 20px;
 }
 
+.no-border{
+    border-bottom: none !important;
+}
+
 .captions{
     font-size: 1rem;
     line-height: 1.6rem;
@@ -103,6 +107,16 @@ button{
     border: none;
     background: none;
     font-family: 'Georama', sans-serif;
+}
+
+.icon {
+    background: url('/images/fleur-bl.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+    display: inline-block;
 }
 
 .btn-light{

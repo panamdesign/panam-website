@@ -62,6 +62,12 @@
         line-height: 2rem;
     }
 
+    h5{
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 1.8rem;
+    }
+
     #the-form{
         padding-top: 20vh;
         height: auto;

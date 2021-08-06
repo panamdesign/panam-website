@@ -21,7 +21,7 @@ body{
  }
 
 .hero-service{
-    background-image: url(/images/JPEG/adam.jpg);
+    background-image: url(/images/JPEG/bridge.jpg);
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -178,11 +178,6 @@ body{
     right: 5vw;
     font-size: 4rem;
 }
-}
-
-@media (min-width: 320px) and (max-width: 920px){
-
-
 }
 
 

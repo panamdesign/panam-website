@@ -13,6 +13,7 @@
 
  .method-top{
     background-image: url(./images/JPEG/arc-triomphe.jpg);
+    background-attachment: fixed;
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -106,12 +107,25 @@
     src: url(/Chomsky.woff) format('woff');
  }
 
- .method-home{
+ .method-home h1{
      font-family: 'Chomsky';
      text-align: center;
      font-weight: 400;
      font-size: 8rem;
      color:var(--primary-color);
+ }
+
+
+
+ h1 span{
+    transition: 0.5s ease;
+    text-shadow:2px 2px #181615, 
+                4px 4px #181615;
+}
+
+ h1:hover span{
+    text-shadow: 0px 0px 2px #ffbc1a,
+    0px 0px 6px #ffbc1a;
  }
  
  .method-top{
@@ -312,7 +326,7 @@
  
 
  @media (min-width: 568px) and (max-width: 780px){
- .method-home{
+ .method-home h1{
      font-size: 6rem;
  }
  .title-home{
@@ -322,7 +336,7 @@
  }
 
  @media (min-width: 320px) and (max-width: 568px){
- .method-home{
+ .method-home h1{
      font-size: 4rem;
  }
 
