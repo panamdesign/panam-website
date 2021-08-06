@@ -114,7 +114,7 @@ body{
     width: 100%;
     flex-basis: 50%;
     height: auto;
-    padding: 2rem;
+    padding: 1.5rem 1rem;
     background-color: var(--secondary-color);
     color: var(--primary-color);
     margin-bottom: 30px;
@@ -127,9 +127,13 @@ body{
 }
 
 .service-title-text ul{
-    list-style: none;
+    list-style-image: url(/images/bullet18100.jpg);
     padding-top: 10px;
 }
+
+
+
+
 
 @media (min-width: 320px) and (max-width: 920px){
     .branding-workshop{
@@ -155,6 +159,8 @@ body{
     .product-script{
         max-width: none;
     }
+
+
 
 .service-home h1{
     font-family: 'Chomsky';
