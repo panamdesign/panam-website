@@ -20,7 +20,13 @@ a{
     text-decoration: none;
 }
 
+.active a{
+    color: var(--primary-color);
+} 
 
+.active-dark a{
+    color: var(--secondary-color);
+} 
 
 .current{
     
@@ -30,6 +36,17 @@ a{
     background-color: var(--secondary-color);
     /* display: block; */
 }
+
+.current-dark{
+    
+    color: var(--secondary-color);
+    width: 80%;
+    height: 50px;
+    background-color: var(--primary-color);
+    /* display: block; */
+}
+
+
 
 .current-mobile{
     
