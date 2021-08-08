@@ -218,15 +218,13 @@ html{
     font-size: 2.8rem;
     top: 50%;
     transform: translateY(-30%);
+    text-shadow: 4px 2px var(--secondary-color);
 }
 
-.title-home h1{
-    text-shadow: 4px 4px var(--secondary-color);
-}
 
 .title-home h2 {
     font-weight: 300;
-    font-size: 2.6rem;
+    font-size: 2.8rem;
 }
 
 .hero-show::after{
@@ -599,6 +597,10 @@ footer{
         font-size: 2.6rem;
     }
 
+    .title-home h1{
+        font-size: 3.2rem;
+    }
+
 }
 
 @media (min-width: 320px) and (max-width: 920px){
@@ -639,7 +641,7 @@ footer{
 
     .title-home{
         top: 40%;
-        transform: translateY(-60%)
+        transform: translateY(-40%)
     }
 
     
