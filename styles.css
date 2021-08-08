@@ -23,7 +23,7 @@ html{
     
 }
 
-.method-top::after,
+/*.method-top::after,
 .project-top::after{
     content: '';
     position: absolute;
@@ -32,7 +32,7 @@ html{
     z-index: 30;
     width: 100%;
     box-shadow: 0px -8px 10px 0px var(--primary-color);
-}
+}*/
 
 .home-top::before{
     content: '';
