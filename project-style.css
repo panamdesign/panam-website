@@ -30,7 +30,7 @@ body{
     position: absolute;
     height: 100vh;
     width: 100%;
-    background-color: rgba(24, 22, 21, 0);
+    background-color: rgba(24, 22, 21, 0.2);
     
 }
 

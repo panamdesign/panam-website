@@ -72,10 +72,6 @@
 #branding{
     padding-top: 50px;
 }
-
-
-
-
  /* @font-face{
     font-family: 'Chomsky';
     src: url(/Chomsky.woff) format('woff');
@@ -105,9 +101,6 @@
 
 
 #products{
-    /* display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px; */
     display: flex;
     flex-direction: column;
     margin: 50px auto 0px auto;
@@ -301,6 +294,13 @@
         .method-top{
         background-attachment: scroll
     }
+    }
+
+    @media (min-width: 768px){
+
+        #products{
+            margin-top: 40px;
+        }
     }
 
  
