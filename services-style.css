@@ -183,6 +183,12 @@ body{
 }
 }
 
+@media (max-width: 1070px){
+        .hero-service{
+        background-attachment: scroll;
+    }
+    }
+
 
 
 

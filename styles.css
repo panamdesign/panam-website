@@ -1,8 +1,12 @@
 :root{
    --primary-color: rgb(255, 188, 26);
-   --secondary-color: rgb(24, 22, 21);
+   --secondary-color: #181615;
    --light-color: rgb(207, 197, 187);
    scroll-behavior: smooth;
+}
+
+html{
+    background-color: var(--light-color);
 }
 
 .home-top{
@@ -16,6 +20,18 @@
 
 .method-top{
     height: 100vh;
+    
+}
+
+.method-top::after,
+.project-top::after{
+    content: '';
+    position: absolute;
+    bottom:-15px;
+    height: 10px;
+    z-index: 30;
+    width: 100%;
+    box-shadow: 0px -8px 10px 0px var(--primary-color);
 }
 
 .home-top::before{
@@ -183,7 +199,7 @@
 
 .hero-show{
     position: relative;
-    height: 100vh;
+    height: 80vh;
     width: 100%;
     text-align: left;
     align-items: center;
@@ -191,6 +207,7 @@
     display: flex;
     padding-bottom: auto;
     z-index: 25;
+    
 }
 
 .title-home{
@@ -199,8 +216,13 @@
     right: 10vw;
     color: var(--primary-color);
     font-size: 2.8rem;
-    top: 30%;
+    top: 60%;
     transform: translateY(-30%);
+}
+
+.title-home h2 {
+    font-weight: 300;
+    font-size: 2.6rem;
 }
 
 
@@ -250,7 +272,7 @@
     max-width: 50%;
     flex-basis: 50%;
     height: 100%;
-    padding: 5rem 2rem;
+    padding: 3.5rem 2rem;
     gap: 3rem;
     justify-content: center;
     background-color: var(--secondary-color);
@@ -285,8 +307,7 @@
 .image-t-m {
     transform: rotate(15deg);
     transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
-    animation: tilting 1.8s infinite ;
-        
+    animation: tilting 0.8s infinite;
 }
 
 .image-t-m img{
@@ -308,7 +329,7 @@
     z-index: 105;
     opacity: 0;
     cursor: pointer;
-    animation: tilting 1.8s infinite;
+    animation: tilting 1.4s infinite;
     
 }
 
@@ -319,23 +340,15 @@ transform: scale(0) rotate(-50deg);
 
 @keyframes tilting{
     0% {
-        transform: rotate(-4deg);
+        transform: scale(0.8);
     }
 
-    20%{
-        transform: rotate(4deg);
+    50%{
+        transform: scale(0.9);
     }
-    40%{
-        transform: rotate(0deg);
-    }
-    60%{
-        transform: rotate(-4deg);
-    }
-    80%{
-        transform: rotate(0deg);
-    }
+    
     100%{
-        transform: rotate(-4deg);
+        transform: scale(0.8);
     }
 }
 
@@ -536,9 +549,6 @@ footer{
         height: 120px;
     }
 
-    .hero-show h1{
-        font-size: 4.6rem;
-    }
 }
 
 @media (min-width: 651px) and (max-width: 1200px){
@@ -559,21 +569,28 @@ footer{
         display: none;
     }
 
-    .title-home{
-        position: absolute;
-        top: 60%;
-        transform: translateY(-50%);
-        
-    }
+    .hero-service,
+    .method-top,
+    .home-top{
+    background-attachment: scroll
 }
+}
+
 @media (min-width: 320px) and (max-width: 650px){
 
     .title-home{
     position: absolute;
-    top: 55%;
-    transform: translateY(-60%);
+    top: 60%;
+    transform: translateY(-30%);
     
 }
+}
+
+@media (min-width: 650px) and (max-width: 860px){
+    .title-home h2{
+        font-size: 2.6rem;
+    }
+
 }
 
 @media (min-width: 320px) and (max-width: 920px){
@@ -611,6 +628,24 @@ footer{
     #header-inactive{
         display: none;
     }
+
+    .title-home{
+        top: 40%;
+        transform: translateY(-30%)
+    }
+
+    
+    .ctr2{
+        margin: 80px 10vw;
+        max-width: 130ch;
+    }
+
+
+    .ctr3{
+        margin: 40px 10vw 100px 10vw;
+        max-width: 130ch;
+    }
+
 }
 
 @media (max-width: 1264px){
@@ -649,21 +684,6 @@ footer{
   
 }
 
-@media (min-width: 1070px){
-    
-
-    .ctr2{
-        margin: 80px 10vw;
-        max-width: 130ch;
-    }
-
-
-    .ctr3{
-        margin: 40px 10vw 100px 10vw;
-        max-width: 130ch;
-    }
-
-}
 
 @media (min-width: 320px) and (max-width: 420px){
     
@@ -671,10 +691,9 @@ footer{
         font-size: 2.6rem;
     }
 
-    .title-home{
-        font-size: 1.8rem;
-        padding-top: 2px;
-        font-weight: 400;
+    .title-home h2{
+        font-size: 2rem;
     }
+   
 }
 
