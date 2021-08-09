@@ -95,12 +95,14 @@ input{
 }
 
 input[type="text"]:focus {
-    outline: 4px solid var(--primary-color);
+    /* outline: 4px solid var(--primary-color); */
+    box-shadow: 0px 0px 5px 5px var(--primary-color);
     border: none;
   }
 
 input[type="email"]:focus {
-    outline: 4px solid var(--primary-color);
+    /* outline: 4px solid var(--primary-color); */
+    box-shadow: 0px 0px 5px 5px var(--primary-color);
     border: none;
   }
 
@@ -134,12 +136,14 @@ textarea{
 }
 
 textarea[type=text]:focus{
-    outline: 4px solid var(--primary-color);
+    /* outline: 4px solid var(--primary-color); */
+    box-shadow: 0px 0px 5px 5px var(--primary-color);
     border: none;
 }
 
 select:focus{
-    outline: 4px solid var(--primary-color);
+    /* outline: 4px solid var(--primary-color); */
+    box-shadow: 0px 0px 5px 5px var(--primary-color);
     border: none;
 }
 
