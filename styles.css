@@ -268,6 +268,10 @@ html{
     
 }
 
+.container-1{
+    margin: 0px 10vw 120px 10vw;
+}
+
 .branding-card{
     display: flex;
     align-items: flex-start;
@@ -392,6 +396,44 @@ transform: scale(0) rotate(-50deg);
     padding: 0px 30px;
     height: 100%;
 }
+
+.title-anim-flower{
+    display: inline-flex;
+    margin-top: 2rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.title-anim{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-anim img{
+    animation: needle 1.8s ease infinite;
+   
+}
+
+@keyframes needle {
+
+    0%{
+        transform: rotate(-25deg)
+    }
+  
+    50%{
+        transform: rotate(25deg);
+    }
+  
+    100%{
+        transform: rotate(-25deg);
+    }
+}
+
+
+
 
 
 

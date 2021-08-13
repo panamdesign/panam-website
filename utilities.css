@@ -65,6 +65,12 @@ a{
    max-width: 120ch;
 }
 
+.ctr-std{
+    width: 80vw;
+    height: auto;
+    margin: 40px 10vw;
+}
+
 .ctr4{
     margin: 40px 10vw;
     max-width: 130ch;
@@ -121,7 +127,7 @@ margin-bottom: 10px;
 
 .captions{
     font-size: 1rem;
-    line-height: 1.6rem;
+    line-height: 1.2rem;
 }
 
 button{
@@ -206,11 +212,18 @@ button{
 
 .product-text-baseline{
     /* background-color: var(--primary-color); */
-    padding: 2rem 5px;
+    padding: 5rem 0rem;
     display: flex;
     gap: 1.5rem;
     align-items: baseline;
     border-bottom: 2px solid var(--primary-color);
+}
+
+.product-text-pd-btm{
+    /* background-color: var(--primary-color); */
+    padding: 2.5rem 0rem 0rem 0rem;
+    display: flex;
+    gap: 1.5rem;
 }
 
 .product-script{

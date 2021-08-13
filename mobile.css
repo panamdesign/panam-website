@@ -14,7 +14,9 @@
 }
 
 @media only screen and (max-width: 768px){
-    .product-text{
+    .product-text,
+    .product-text-baseline
+    {
         flex-direction: column;
         align-items: flex-start !important;
         padding: 2rem 0rem ;
@@ -28,6 +30,7 @@
     .step,
     .product-script {
         max-width: 100% !important;
+     
     }
 
             .method-text{
@@ -156,7 +159,8 @@
     display: flex;
     flex-direction: column;
     padding-left: 10vw;
-    padding-top: 20vh;
+    justify-content: center;
+    align-items: flex-start;
     z-index: -20;
 }
 
