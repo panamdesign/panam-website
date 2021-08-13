@@ -18,6 +18,10 @@ html{
     z-index: 5;
 }
 
+.title-home h1{
+    font-size: 4.2rem;
+}
+
 .method-top{
     height: 100vh;
     
@@ -224,7 +228,7 @@ html{
 
 .title-home h2 {
     font-weight: 300;
-    font-size: 2.8rem;
+    font-size: 3.6rem;
 }
 
 .hero-show::after{
@@ -308,6 +312,7 @@ html{
     height: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .home-card-frame-tm{
