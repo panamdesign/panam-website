@@ -169,7 +169,11 @@ body{
     }
     }
 
+@media (min-width: 320px) and (max-width: 520px){
 
-
-
+    .service-big-title img {
+        max-width: 250px;
+       
+    }
+    }
 

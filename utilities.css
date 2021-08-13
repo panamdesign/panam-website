@@ -206,7 +206,7 @@ button{
 
 .product-text-baseline{
     /* background-color: var(--primary-color); */
-    padding: 2rem 0rem;
+    padding: 2rem 5px;
     display: flex;
     gap: 1.5rem;
     align-items: baseline;
