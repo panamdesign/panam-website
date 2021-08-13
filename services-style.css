@@ -82,15 +82,15 @@ body{
 }
 
 
-.container{
-    margin: 40px 10vw;
-    width: 80vw;
+.container-srv{
+    width: 100%;
 }
 
 .branding-workshop{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    
 }
 
 
@@ -100,6 +100,7 @@ body{
     flex-basis: 50%;
     height: auto;
     padding: 3rem 1rem;
+    padding-left: 10vw;
     background-color: var(--secondary-color);
     color: var(--primary-color);
     margin-bottom: 15px;
@@ -113,10 +114,13 @@ body{
 
 .service-title-text{
     margin-bottom: 40px;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    width: 100%;
 }
 
 .product-script li{
-    padding: 5px;
+    padding: 5px 0px;
 }
 
 
