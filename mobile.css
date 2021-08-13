@@ -15,18 +15,28 @@
 
 @media only screen and (max-width: 768px){
     .product-text,
-    .product-text-baseline
+    .product-text-baseline,
+    .product-text-pd-btm
     {
         flex-direction: column;
         align-items: flex-start !important;
         padding: 2rem 0rem ;
     }
 
+    .title-home h2{
+        text-shadow: 2px 2px var(--secondary-color);
+    }
+
     .method-big-title,
     .method-big-title2{
         padding: 0rem !important;
     }
+
+    .home-card-title,
+    .home-card-title-tm{
+    padding: 3.5rem 1.225rem !important;
     
+    }
     .step,
     .product-script {
         max-width: 100% !important;
@@ -37,8 +47,11 @@
             width: 80vw;
             margin: 40px auto;
         }
-    }
 
+        .btncard-sm-light{
+            font-size: 1.4rem;
+        }
+    }
 
 
 @media only screen and (max-width: 1070px) {
@@ -159,6 +172,7 @@
     display: flex;
     flex-direction: column;
     padding-left: 10vw;
+    padding-top: 15vh;
     justify-content: center;
     align-items: flex-start;
     z-index: -20;
