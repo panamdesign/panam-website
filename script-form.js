@@ -3,7 +3,7 @@ const sectionTwo = document.querySelector(".form-top")
 
 
 const sectionTwoOptions = {
-    rootMargin: "-500px 0px 0px 0px"
+    rootMargin: "-600px 0px 0px 0px"
     
 };
 

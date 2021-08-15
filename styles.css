@@ -228,7 +228,7 @@ html{
 
 .title-home h2 {
     font-weight: 300;
-    font-size: 3.6rem;
+    font-size: 4rem;
 }
 
 .hero-show::after{
@@ -562,9 +562,14 @@ footer{
     .logo img{
         height: 100px;
     }
+   
 
     .hero-show h1{
         font-size: 3.4rem;
+    }
+
+    .title-home h2{
+        font-size: 2.9rem;
     }
 
     .title-cards{
@@ -637,6 +642,8 @@ footer{
     transform: translateY(-30%);
     
 }
+
+
 }
 
 @media (min-width: 650px) and (max-width: 860px){
