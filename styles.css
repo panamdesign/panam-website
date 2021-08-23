@@ -320,7 +320,7 @@ html{
 }
 
 .home-card-frame-tm{
-    background-image: url(/images/JPEG/gone-back.png);
+    background-image: url(/images/JPEG/web-design-home.jpg);
     background-position: center;
     background-size: cover;
     height: 100%;
@@ -344,7 +344,7 @@ html{
 
 /*DeLorean gone*/
 
-.gobackmarty{
+/* .gobackmarty{
     position: absolute;
     height: 60%;
     width: 40%;
@@ -372,7 +372,7 @@ transform: scale(0) rotate(-50deg);
     100%{
         transform: scale(0.8);
     }
-}
+} */
 
 /*----------------*/
 
@@ -674,11 +674,14 @@ footer{
     max-width: none;
 }
 
-.image-t-m{
+.image-t-m,
+.image-s-m
+{
     height: 500px;
     display: flex;
     justify-content: center;
 }
+
 
 .gobackmarty{
     position: absolute;
